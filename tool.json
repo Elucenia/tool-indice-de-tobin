@@ -1,0 +1,142 @@
+{
+  "tool": {
+    "id": "indice-de-tobin",
+    "title": "Índice de Tobin (respiração rápida e superficial)",
+    "short": "Preditor de sucesso no desmame ventilatório",
+    "desc": "Calcule o índice de respiração rápida e superficial de Tobin (f/VT) no teste de respiração espontânea e veja a chance de sucesso no desmame.",
+    "lead": "Razão entre a frequência respiratória e o volume corrente em litros durante respiração espontânea; valores altos indicam padrão rápido e superficial, associado a falha do desmame.",
+    "spec": [
+      "medicina-intensiva",
+      "pneumologia",
+      "anestesiologia"
+    ],
+    "fields": [
+      [
+        "fr",
+        "Frequência respiratória espontânea",
+        "num",
+        {
+          "min": 1,
+          "max": 80,
+          "unit": "irpm",
+          "ph": "20"
+        }
+      ],
+      [
+        "vt",
+        "Volume corrente espontâneo",
+        "num",
+        {
+          "min": 50,
+          "max": 1500,
+          "unit": "mL",
+          "ph": "400"
+        }
+      ]
+    ],
+    "formula": "<p><strong>f/VT</strong> = frequência respiratória (irpm) ÷ volume corrente (em litros).</p>",
+    "table": [
+      [
+        "f/VT",
+        "Interpretação (Yang e Tobin, 1991)"
+      ],
+      [
+        "&lt; 105",
+        "Favorece sucesso do desmame"
+      ],
+      [
+        "≥ 105",
+        "Prediz falha do desmame"
+      ]
+    ],
+    "tips": [
+      "Meça no primeiro minuto de respiração espontânea (tubo T ou CPAP sem pressão de suporte, ou com suporte mínimo): pressão de suporte alta reduz artificialmente o índice.",
+      "O índice é um teste de triagem; a decisão de extubar depende do teste de respiração espontânea completo (30 a 120 min), da tosse, das secreções e do nível de consciência.",
+      "Valor baixo não garante sucesso: falha por obstrução de via aérea alta, secreção ou insuficiência cardíaca não é prevista pelo índice.",
+      "Na maioria dos serviços, o teste de respiração espontânea bem-sucedido é critério mais forte que o f/VT isolado."
+    ],
+    "sources": [
+      [
+        "Yang KL, Tobin MJ. A prospective study of indexes predicting the outcome of trials of weaning from mechanical ventilation. N Engl J Med, 1991.",
+        "https://doi.org/10.1056/NEJM199105233242101"
+      ],
+      [
+        "Boles JM et al. Weaning from mechanical ventilation. Eur Respir J, 2007.",
+        "https://doi.org/10.1183/09031936.00010206"
+      ]
+    ],
+    "cases": [
+      [
+        "FR 20, VT 400 mL: 50",
+        {
+          "fr": 20,
+          "vt": 400
+        },
+        {
+          "raw": {
+            "rsbi": 50
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "FR 21, VT 200 mL: 105 (limite)",
+        {
+          "fr": 21,
+          "vt": 200
+        },
+        {
+          "raw": {
+            "rsbi": 105
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "FR 35, VT 250 mL: 140",
+        {
+          "fr": 35,
+          "vt": 250
+        },
+        {
+          "raw": {
+            "rsbi": 140
+          },
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "label": "FR 20, VT 400 mL: 50",
+    "input": {
+      "fr": 20,
+      "vt": 400
+    },
+    "expected": {
+      "raw": {
+        "rsbi": 50
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "fr": 20,
+      "vt": 400
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "FR 21, VT 200 mL: 105 (limite)",
+    "input": {
+      "fr": 21,
+      "vt": 200
+    },
+    "expected": {
+      "raw": {
+        "rsbi": 105
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "fr": 21,
+      "vt": 200
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "FR 35, VT 250 mL: 140",
+    "input": {
+      "fr": 35,
+      "vt": 250
+    },
+    "expected": {
+      "raw": {
+        "rsbi": 140
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "fr": 35,
+      "vt": 250
+    },
+    "expandedZeroOptions": []
+  }
+]

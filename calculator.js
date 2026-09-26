@@ -1,11 +1,11 @@
-/* tool-indice-de-tobin · Elucenia · https://github.com/Elucenia/tool-indice-de-tobin
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-indice-de-tobin · ELUCENIA · https://github.com/Elucenia/tool-indice-de-tobin
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"indice-de-tobin","title":"Índice de Tobin (respiração rápida e superficial)","fields":[["fr","Frequência respiratória espontânea","num",{"min":1,"max":80,"unit":"irpm","ph":"20"}],["vt","Volume corrente espontâneo","num",{"min":50,"max":1500,"unit":"mL","ph":"400"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

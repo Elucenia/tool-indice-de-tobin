@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-indice-de-tobin",
   "version": "0.1.0",
-  "description": "Índice de Tobin (respiração rápida e superficial) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Índice de Tobin (respiração rápida e superficial) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",

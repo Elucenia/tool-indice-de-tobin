@@ -1,6 +1,13 @@
 [
   {
-    "label": "FR 20, VT 400 mL: 50",
+    "id": "indice-de-tobin",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "FR 20, VT 400 mL: 50",
+    "originalInput": {
+      "fr": 20,
+      "vt": 400
+    },
     "input": {
       "fr": 20,
       "vt": 400
@@ -11,14 +18,34 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "fr": 20,
-      "vt": 400
+    "recordedResult": {
+      "main": [
+        "50",
+        "ciclos/min/L"
+      ],
+      "label": "Índice de respiração rápida e superficial (f/VT)",
+      "raw": {
+        "rsbi": 50
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "FR 21, VT 200 mL: 105 (limite)",
+    "id": "indice-de-tobin",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "FR 21, VT 200 mL: 105 (limite)",
+    "originalInput": {
+      "fr": 21,
+      "vt": 200
+    },
     "input": {
       "fr": 21,
       "vt": 200
@@ -29,14 +56,34 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "fr": 21,
-      "vt": 200
+    "recordedResult": {
+      "main": [
+        "105",
+        "ciclos/min/L"
+      ],
+      "label": "Índice de respiração rápida e superficial (f/VT)",
+      "raw": {
+        "rsbi": 105
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "FR 35, VT 250 mL: 140",
+    "id": "indice-de-tobin",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "FR 35, VT 250 mL: 140",
+    "originalInput": {
+      "fr": 35,
+      "vt": 250
+    },
     "input": {
       "fr": 35,
       "vt": 250
@@ -47,10 +94,23 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "fr": 35,
-      "vt": 250
+    "recordedResult": {
+      "main": [
+        "140",
+        "ciclos/min/L"
+      ],
+      "label": "Índice de respiração rápida e superficial (f/VT)",
+      "raw": {
+        "rsbi": 140
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

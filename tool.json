@@ -5,6 +5,7 @@
     "short": "Preditor de sucesso no desmame ventilatório",
     "desc": "Calcule o índice de respiração rápida e superficial de Tobin (f/VT) no teste de respiração espontânea e veja a chance de sucesso no desmame.",
     "lead": "Razão entre a frequência respiratória e o volume corrente em litros durante respiração espontânea; valores altos indicam padrão rápido e superficial, associado a falha do desmame.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-intensiva",
       "pneumologia",
@@ -35,26 +36,6 @@
       ]
     ],
     "formula": "<p><strong>f/VT</strong> = frequência respiratória (irpm) ÷ volume corrente (em litros).</p>",
-    "table": [
-      [
-        "f/VT",
-        "Interpretação (Yang e Tobin, 1991)"
-      ],
-      [
-        "&lt; 105",
-        "Favorece sucesso do desmame"
-      ],
-      [
-        "≥ 105",
-        "Prediz falha do desmame"
-      ]
-    ],
-    "tips": [
-      "Meça no primeiro minuto de respiração espontânea (tubo T ou CPAP sem pressão de suporte, ou com suporte mínimo): pressão de suporte alta reduz artificialmente o índice.",
-      "O índice é um teste de triagem; a decisão de extubar depende do teste de respiração espontânea completo (30 a 120 min), da tosse, das secreções e do nível de consciência.",
-      "Valor baixo não garante sucesso: falha por obstrução de via aérea alta, secreção ou insuficiência cardíaca não é prevista pelo índice.",
-      "Na maioria dos serviços, o teste de respiração espontânea bem-sucedido é critério mais forte que o f/VT isolado."
-    ],
     "sources": [
       [
         "Yang KL, Tobin MJ. A prospective study of indexes predicting the outcome of trials of weaning from mechanical ventilation. N Engl J Med, 1991.",
@@ -106,9 +87,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -117,17 +95,142 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 2,
+      "passed": 2,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "RSBI/Yang Tobin 1991:f/VT, VTlitros; sem confusão VTm L",
+    "implementationVersion": "indice-de-tobin@native-2026-10-03+f26989df1109",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2023603/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "f/VT = frequência respiratória (irpm) ÷ volume corrente (em litros).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "fr",
+            "label": "Frequência respiratória espontânea",
+            "type": "num",
+            "min": 1,
+            "max": 80,
+            "unit": "irpm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vt",
+            "label": "Volume corrente espontâneo",
+            "type": "num",
+            "min": 50,
+            "max": 1500,
+            "unit": "mL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "eb8c8a83b7696ccb02c62dc7ca69512078844049827e91a6ad640d22390ed879"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Yang KL, Tobin MJ. A prospective study of indexes predicting the outcome of trials of weaning from mechanical ventilation. N Engl J Med, 1991.",
+          "url": "https://doi.org/10.1056/NEJM199105233242101",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A prospective study of indexes predicting the outcome of trials of weaning from mechanical ventilation.",
+            "year": "1991",
+            "firstPublicationDate": "1991-05-01",
+            "doi": "10.1056/nejm199105233242101",
+            "pmid": "2023603",
+            "journal": "The New England journal of medicine",
+            "authors": "Yang KL, Tobin MJ."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2023603/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "aeb07799628fa5894289db8d00ba92340b137e08579c5445eb43ee9054286b52",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Boles JM et al. Weaning from mechanical ventilation. Eur Respir J, 2007.",
+          "url": "https://doi.org/10.1183/09031936.00010206",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Weaning from mechanical ventilation.",
+            "year": "2007",
+            "firstPublicationDate": "2007-05-01",
+            "doi": "10.1183/09031936.00010206",
+            "pmid": "17470624",
+            "journal": "The European respiratory journal",
+            "authors": "Boles JM, Bion J, Connors A, Herridge M, Marsh B, Melot C, Pearl R, Silverman H, Stanchina M, Vieillard-Baron A, Welte T."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/17470624/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "2f293482ac0fdfc1b3e6841cde001a6655497de12b8603dadad468ea1d5acd10",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 2,
+        "passed": 2,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "e7db980ce15106e0278c11bcbb9e84b72556111cddff67596473e9d0de8cc65a",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479"
+    },
+    "limits": "O RSBI foi estudado como preditor do resultado de tentativas de desmame ventilatório. O resultado depende de condições e técnica da medição e não confirma sozinho capacidade de proteção de via aérea ou segurança de extubação. Um índice favorável não equivale a sucesso garantido.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.049Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não informa protocolo de medição, unidade de volume, corte 105 ou todas as exclusões. Não estabelece decisão de extubação pelo índice isolado."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/indice-de-tobin/calculator.js",
+    "bytes": 4628,
+    "sha256": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "bd712bff96ff20a75e5835bd6e239646a6949c6ae16088d11dfd0d7d05a4a6f2",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "beae7f65ede141c79851860ab8f131b50b1470542f1b5ad67a1b32c2d4c773e9",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

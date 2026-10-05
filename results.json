@@ -1,0 +1,259 @@
+{
+  "id": "indice-de-tobin",
+  "at": "2026-10-05T17:29:50.857Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/indice-de-tobin/calculator.js",
+    "bytes": 4628,
+    "sha256": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479"
+  },
+  "cases": [
+    {
+      "name": "FR 20, VT 400 mL: 50",
+      "input": {
+        "fr": 20,
+        "vt": 400
+      },
+      "obtained": {
+        "id": "indice-de-tobin",
+        "main": [
+          "50",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "raw": {
+          "rsbi": 50
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.rsbi",
+          "expected": 50,
+          "obtained": 50,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rsbi",
+          "expected": 50,
+          "obtained": 50,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "50",
+          "obtained": "50",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "ciclos/min/L",
+          "obtained": "ciclos/min/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "FR 21, VT 200 mL: 105 (limite)",
+      "input": {
+        "fr": 21,
+        "vt": 200
+      },
+      "obtained": {
+        "id": "indice-de-tobin",
+        "main": [
+          "105",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "raw": {
+          "rsbi": 105
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.rsbi",
+          "expected": 105,
+          "obtained": 105,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rsbi",
+          "expected": 105,
+          "obtained": 105,
+          "tolerance": 1.05e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "105",
+          "obtained": "105",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "ciclos/min/L",
+          "obtained": "ciclos/min/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "FR 35, VT 250 mL: 140",
+      "input": {
+        "fr": 35,
+        "vt": 250
+      },
+      "obtained": {
+        "id": "indice-de-tobin",
+        "main": [
+          "140",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "raw": {
+          "rsbi": 140
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.rsbi",
+          "expected": 140,
+          "obtained": 140,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rsbi",
+          "expected": 140,
+          "obtained": 140,
+          "tolerance": 1.4e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "140",
+          "obtained": "140",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "ciclos/min/L",
+          "obtained": "ciclos/min/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

@@ -104,7 +104,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "RSBI/Yang Tobin 1991:f/VT, VTlitros; sem confusão VTm L",
-    "implementationVersion": "indice-de-tobin@native-2026-10-03+f26989df1109",
+    "implementationVersion": "indice-de-tobin@native-2026-10-05+1f8eb99dbec1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2023603/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -200,7 +200,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479"
+      "implementationHash": "1f8eb99dbec18b0e71efa08ee3aaf0ce0b08885473165776a459256acc75c599",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-de-tobin@native-2026-10-03+f26989df1109",
+          "previousImplementationHash": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479",
+          "implementationHash": "1f8eb99dbec18b0e71efa08ee3aaf0ce0b08885473165776a459256acc75c599",
+          "scientificBodySha256": "c52bd6638d3914c6773b3fa80b75f6627f4d918ebf8330d3d2f726f2d79758ae",
+          "metadataContractHash": "eb8c8a83b7696ccb02c62dc7ca69512078844049827e91a6ad640d22390ed879",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O RSBI foi estudado como preditor do resultado de tentativas de desmame ventilatório. O resultado depende de condições e técnica da medição e não confirma sozinho capacidade de proteção de via aérea ou segurança de extubação. Um índice favorável não equivale a sucesso garantido.",
     "sourceLimitEvidence": {
@@ -219,15 +247,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-de-tobin/calculator.js",
-    "bytes": 4628,
-    "sha256": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479"
+    "bytes": 4833,
+    "sha256": "1f8eb99dbec18b0e71efa08ee3aaf0ce0b08885473165776a459256acc75c599"
   },
-  "sourceToolSha256": "bd712bff96ff20a75e5835bd6e239646a6949c6ae16088d11dfd0d7d05a4a6f2",
+  "sourceToolSha256": "8cde52e0505714f39b6e152dc6416993423ba70b48c8e6d324a3a1a7a8ffc248",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "beae7f65ede141c79851860ab8f131b50b1470542f1b5ad67a1b32c2d4c773e9",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

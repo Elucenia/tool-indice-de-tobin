@@ -1,0 +1,163 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "indice-de-tobin",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "e6be02b14f283fbb14b8f9f09fba9970084b60fc",
+    "oldEngineSha256": "f26989df11099eeb23e0c74e8882089253544e9477d7c2d5a1178e6affd3d479",
+    "currentEngineSha256": "1f8eb99dbec18b0e71efa08ee3aaf0ce0b08885473165776a459256acc75c599"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "FR 20, VT 400 mL: 50",
+      "input": {
+        "fr": 20,
+        "vt": 400
+      },
+      "publicOutput": {
+        "id": "indice-de-tobin",
+        "main": [
+          "50",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "raw": {
+          "rsbi": 50
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rsbi": 50
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "50",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "level": "low",
+        "verdict": "Abaixo de 105: favorece o sucesso do desmame",
+        "raw": {
+          "rsbi": 50
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "FR 21, VT 200 mL: 105 (limite)",
+      "input": {
+        "fr": 21,
+        "vt": 200
+      },
+      "publicOutput": {
+        "id": "indice-de-tobin",
+        "main": [
+          "105",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "raw": {
+          "rsbi": 105
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rsbi": 105
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "105",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "level": "high",
+        "verdict": "105 ou mais: prediz falha do desmame",
+        "raw": {
+          "rsbi": 105
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "FR 35, VT 250 mL: 140",
+      "input": {
+        "fr": 35,
+        "vt": 250
+      },
+      "publicOutput": {
+        "id": "indice-de-tobin",
+        "main": [
+          "140",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "raw": {
+          "rsbi": 140
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rsbi": 140
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "140",
+          "ciclos/min/L"
+        ],
+        "label": "Índice de respiração rápida e superficial (f/VT)",
+        "level": "high",
+        "verdict": "105 ou mais: prediz falha do desmame",
+        "raw": {
+          "rsbi": 140
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}

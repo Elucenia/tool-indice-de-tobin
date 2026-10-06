@@ -1,0 +1,387 @@
+{
+  "id": "indice-de-tobin",
+  "implementationVersion": "indice-de-tobin@native-2026-10-05+1f8eb99dbec1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abaixo de 105: favorece o sucesso do desmame",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 ou mais: prediz falha do desmame",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 ou mais: prediz falha do desmame",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Below 105: favors successful weaning",
+            "locale": "en",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 or more: predicts weaning failure",
+            "locale": "en",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 or more: predicts weaning failure",
+            "locale": "en",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Por debajo de 105: favorece el éxito del destete",
+            "locale": "es",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 o más: predice fracaso del destete",
+            "locale": "es",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 o más: predice fracaso del destete",
+            "locale": "es",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "En dessous de 105 : favorise le succès du sevrage",
+            "locale": "fr",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 ou plus : prédit l’échec du sevrage",
+            "locale": "fr",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 ou plus : prédit l’échec du sevrage",
+            "locale": "fr",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unter 105: begünstigt das Gelingen des Weanings",
+            "locale": "de",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 oder mehr: sagt ein Weaning-Versagen voraus",
+            "locale": "de",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 oder mehr: sagt ein Weaning-Versagen voraus",
+            "locale": "de",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sotto 105: favorisce il successo dello svezzamento",
+            "locale": "it",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 o più: predice fallimento dello svezzamento",
+            "locale": "it",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 o più: predice fallimento dello svezzamento",
+            "locale": "it",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أقل من 105: يرجّح نجاح الفطام",
+            "locale": "ar",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 أو أكثر: يتنبأ بفشل الفطام",
+            "locale": "ar",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 أو أكثر: يتنبأ بفشل الفطام",
+            "locale": "ar",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低于105：有利于脱机成功",
+            "locale": "zh",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105或更高：预测脱机失败",
+            "locale": "zh",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105或更高：预测脱机失败",
+            "locale": "zh",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105未満：離脱成功を支持する",
+            "locale": "ja",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105以上：離脱失敗を予測する",
+            "locale": "ja",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105以上：離脱失敗を予測する",
+            "locale": "ja",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "FR 20, VT 400 mL: 50",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 से कम: वीनिंग की सफलता के पक्ष में",
+            "locale": "hi",
+            "template": "documented-authored-e4f2873791d9fa2e0075"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FR 21, VT 200 mL: 105 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 या अधिक: वीनिंग विफलता का पूर्वानुमान करता है",
+            "locale": "hi",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "FR 35, VT 250 mL: 140",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "105 या अधिक: वीनिंग विफलता का पूर्वानुमान करता है",
+            "locale": "hi",
+            "template": "documented-authored-b84bb301aa8addc7fc33"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

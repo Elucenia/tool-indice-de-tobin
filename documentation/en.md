@@ -65,3 +65,22 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Below 105: favors successful weaning
+
+
+### 2
+
+105 or more: predicts weaning failure
+
+
+### 3
+
+105 or more: predicts weaning failure
+
